@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="format-detection" content="telephone=no, address=no, email=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>FINAL</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+
+        <h1>Todo app</h1>
+
+        <!-- header -->
+        <section class="header">
+            <h2>header with date & percangage</h2>
+            <div id="date">
+            </div>
+            <div id="percentage">
+                <span class="bg"></span>
+            </div>
+        </section>
+
+        <!-- todo list container -->
+        <section class="container">
+            <h2>Todo list container</h2>
+            <ul id="todos">
+            </ul>
+            <form id="new-todo-container">
+                <div class="task">
+                    <input type="text" class="todo" placeholder="Something to do" name="text">
+                    <button class="new-todo" style="background: url(/images/add_1.png) 50% 50% no-repeat; background-size: contain"></button>
+                </div>
+            </form>
+        </section>
+
+        <script src="app/uuidv4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+        <script src="app/todo-functions.js"></script>
+        <script src="app/todo-app.js"></script>
+    </body>
+</html>

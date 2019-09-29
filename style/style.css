@@ -1,0 +1,149 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:'Avenir'; 
+    color: #2E2E2E;
+}
+
+body{
+    height: calc(100% - 2em);
+    width: 400px;
+    margin: 0 auto;
+    padding: 1em 2em; 
+}
+
+h1, h2{
+    display: none;
+}
+
+.header #date p{
+    color: #2473E0;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.header #date p:nth-of-type(2){
+    color: #FC9C71;
+    font-size: 13px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.header #percentage{
+    position: relative;
+    margin: 10px 0 30px;
+}
+
+.header #percentage span{
+    display: block;
+    height: 13px;
+    border-radius: 5px;
+    background-color: #2473E0;
+}
+
+.header #percentage span:first-of-type{
+    position: absolute;
+}
+
+.header #percentage span:nth-of-type(2){
+    position: relative;
+    width: 100%;
+    opacity: .15;
+}
+
+.container{
+    position: relative;
+    font-weight: 100
+}
+
+.container h3{
+    margin: 0 0 .2em 0;
+}
+
+.container ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em 0;
+}
+
+#todos li{
+    position: relative;
+    line-height: 2.5em;
+}
+
+#todos li span{
+    font-size: 16px;
+    vertical-align: middle;
+    padding-left: 5px
+}
+
+#todos li button{
+    position: absolute;
+    right: -10px;
+    border: none;
+    opacity: .8;
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+}
+
+
+input[type=checkbox] + label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: 1px solid #2473E0;
+    border-radius: 5px;
+    cursor: pointer 
+}
+
+input[type=checkbox]:checked + label {
+    background-color: #2473E0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+#new-todo-container {
+    position: fixed;
+    bottom: 2.5em;
+    width: 400px;
+}
+
+.task {
+    position: relative;
+    line-height: 2em;
+    border-bottom: 1px solid rgb(138, 138, 138);
+    width: 100%;
+}
+
+.task input[class="todo"] {
+    font-family: 'Avenir';
+    border: none;
+    font-size: 18px;
+    color: #2E2E2E;
+    font-weight: 100;
+}
+
+.task input[class="todo"]::placeholder{
+    font-size: 18px;
+    color: #2E2E2E;
+    font-weight: 100;
+}
+
+.task .new-todo {
+    display: inline-block;
+    border: none;
+    background: none;
+    float: right;
+    width: 30px;
+    height: 30px;
+
+}
+
+
