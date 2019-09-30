@@ -138,10 +138,11 @@ input[type=checkbox] {
 }
 
 .task .new-todo {
-    display: inline-block;
+    position: absolute;
     border: none;
     background: none;
-    float: right;
+    right: 0;
+    bottom: 0;
     width: 30px;
     height: 30px;
 }
