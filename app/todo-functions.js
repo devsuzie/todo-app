@@ -109,6 +109,9 @@ const generateTodoDom = (todo) => {
 
     // Setup the todo text
     todoText.textContent = todo.text
+    if(checkbox.checked) {
+        todoText.classList.add('checked')
+    }
     todoLi.appendChild(todoText)
 
     // Setup the remove button

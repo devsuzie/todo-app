@@ -80,6 +80,11 @@ h1, h2{
     padding-left: 5px
 }
 
+#todos li span.checked{
+    text-decoration-line: line-through;
+    opacity: .35;
+}
+
 #todos li button{
     position: absolute;
     right: -10px;
@@ -165,7 +170,7 @@ input[type=checkbox] {
         border: none;
         font-size: 18px;
         color: #2E2E2E;
-        width: calc(100% - 70px);
+        width: calc(100% - 60px);
         font-weight: 100;
     }
 }
