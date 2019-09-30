@@ -127,6 +127,7 @@ input[type=checkbox] {
     border: none;
     font-size: 18px;
     color: #2E2E2E;
+    width: calc(100% - 35px);
     font-weight: 100;
 }
 
@@ -137,7 +138,7 @@ input[type=checkbox] {
 }
 
 .task .new-todo {
-    display: inline-block;
+    display: block;
     border: none;
     background: none;
     float: right;

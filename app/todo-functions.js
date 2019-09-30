@@ -112,7 +112,7 @@ const generateTodoDom = (todo) => {
     todoLi.appendChild(todoText)
 
     // Setup the remove button
-    removeButton.style.background = 'url(/images/delete-hover.png) 50% 50% no-repeat'
+    removeButton.style.background = 'url(/images/delete.png) 50% 50% no-repeat'
     removeButton.style.backgroundSize = 'contain'
     todoLi.appendChild(removeButton)
     removeButton.addEventListener('click', () => {
