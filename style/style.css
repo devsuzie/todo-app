@@ -159,4 +159,13 @@ input[type=checkbox] {
         width: calc(100% - 4em);
         right: 2em;
     }
+
+    .task input[class="todo"] {
+        font-family: 'Avenir';
+        border: none;
+        font-size: 18px;
+        color: #2E2E2E;
+        width: calc(100% - 70px);
+        font-weight: 100;
+    }
 }
