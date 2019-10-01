@@ -1,16 +1,28 @@
 html{
     height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family:'Avenir'; 
     color: #2E2E2E;
+    background-color: #D3B2DD;
+    background-image: linear-gradient(to bottom right, #D3B2DD, #4865A4);
 }
 
-body{
-    height: calc(100% - 2em);
+#wrap{
+    position: absolute;
+    top: 2em;
+    left: calc(50% - 200px);
+    height: calc(100% - 6em);
     width: 400px;
-    margin: 0 auto;
-    padding: 1em 2em; 
+    padding: 1em 2em;
+    background: #ffffff;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1, h2{
@@ -116,7 +128,7 @@ input[type=checkbox] {
 
 #new-todo-container {
     position: fixed;
-    bottom: 2.5em;
+    bottom: 4em;
     width: 400px;
 }
 
@@ -134,6 +146,11 @@ input[type=checkbox] {
     color: #2E2E2E;
     width: calc(100% - 35px);
     font-weight: 100;
+    background: none;
+}
+
+.task input[class="todo"]:focus {
+    outline: none;
 }
 
 .task input[class="todo"]::placeholder{
@@ -153,16 +170,28 @@ input[type=checkbox] {
 }
 
 
-@media (max-width: 450px){
+@media (max-width: 800px){
     body{
-        width: calc(100% - 4em)
+        width: 100%;
+        background-color: #ffffff;
+        background-image: inherit;
+    }
+
+    #wrap{
+        position: relative;
+        top: inherit;
+        left: inherit;
+        margin: 0 auto;
+        height: calc(100% - 2em);
+        width: 400px;
+        border-radius: inherit;
+        box-shadow: inherit;
     }
 
     #new-todo-container {
         position: fixed;
         bottom: 2.5em;
-        width: calc(100% - 4em);
-        right: 2em;
+        width: 400px;
     }
 
     .task input[class="todo"] {
@@ -172,5 +201,17 @@ input[type=checkbox] {
         color: #2E2E2E;
         width: calc(100% - 60px);
         font-weight: 100;
+    }
+}
+
+@media (max-width: 450px){
+
+    #wrap{
+        width: calc(100% - 4em);
+    }
+
+    #new-todo-container{
+        width: calc(100% - 4em);
+        right: 2em;
     }
 }

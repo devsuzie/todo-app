@@ -11,31 +11,32 @@
         <link rel="stylesheet" href="/style/style.css">
     </head>
     <body>
+        <div id="wrap">
+            <h1>Todo app</h1>
 
-        <h1>Todo app</h1>
-
-        <!-- header -->
-        <section class="header">
-            <h2>header with date & percangage</h2>
-            <div id="date">
-            </div>
-            <div id="percentage">
-                <span class="bg"></span>
-            </div>
-        </section>
-
-        <!-- todo list container -->
-        <section class="container">
-            <h2>Todo list container</h2>
-            <ul id="todos">
-            </ul>
-            <form id="new-todo-container">
-                <div class="task">
-                    <input type="text" class="todo" placeholder="Something to do" name="text">
-                    <button class="new-todo" style="background: url(/images/add_1.png) 50% 50% no-repeat; background-size: contain"></button>
+            <!-- header -->
+            <section class="header">
+                <h2>header with date & percangage</h2>
+                <div id="date">
                 </div>
-            </form>
-        </section>
+                <div id="percentage">
+                    <span class="bg"></span>
+                </div>
+            </section>
+
+            <!-- todo list container -->
+            <section class="container">
+                <h2>Todo list container</h2>
+                <ul id="todos">
+                </ul>
+                <form id="new-todo-container">
+                    <div class="task">
+                        <input type="text" class="todo" placeholder="Something to do" name="text">
+                        <button class="new-todo" style="background: url(/images/add_1.png) 50% 50% no-repeat; background-size: contain"></button>
+                    </div>
+                </form>
+            </section>
+        </div>
 
         <script src="app/uuidv4.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
